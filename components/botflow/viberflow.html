@@ -1976,103 +1976,142 @@
                 
                 <h1 id="novabotflow-viber">Nova.BotFlow Viber<a class="headerlink" href="#novabotflow-viber" title="Permanent link">&para;</a></h1>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<h3 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending text from agent to client</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending text from client to agent</li>
-</ul>
-<h3 id="pictures">Pictures<a class="headerlink" href="#pictures" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending pictures from agent to client</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending pictures from client to agent</li>
-</ul>
-<h3 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending attachments from client to agent</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending attachments from agent to client</li>
-</ul>
-<h3 id="emoji">Emoji<a class="headerlink" href="#emoji" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending emoji from client to agent</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending emoji from agent to client</li>
-</ul>
-<h3 id="typing">Typing<a class="headerlink" href="#typing" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> typing identificator is precent when agent writes a message</li>
-</ul>
-<h3 id="quick-replies">Quick Replies<a class="headerlink" href="#quick-replies" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Quick Replies are supported as a disappearing after click/tap Rich Media Message object buttons</li>
+<h4 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Keyboards:
-Maximum content length 7000 characters
-Maximum number of rows is 24
-Maximum number of columns is 6
+<pre><code>• Text character limit: 1056
 </code></pre>
 
 </p>
 </details>
-<h3 id="card">Card<a class="headerlink" href="#card" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Card is supported as a monolith structure with <em>Title</em>, <em>Subtitle</em>, <em>Subtitle</em>, and <em>Quick Replies</em> buttons</li>
+<h4 id="pictures">Pictures<a class="headerlink" href="#pictures" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Keyboards:
-Maximum length of Title with Subtitle is 239 characters
-Maximum length of Label is 250 characters
-Maximum 3 buttons
-
+<pre><code>• Picture size limit is: 1 MB
+• Picture formats: jpeg
+• Description text: no
 </code></pre>
 
 </p>
 </details>
-<h3 id="button-list">Button List<a class="headerlink" href="#button-list" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Button List is supported as a Title with number of keyboard buttons positioned vertically </li>
+<h4 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Maximum content length 7000 characters
-Maximum number of rows is 24
+<pre><code>• File size limit is: 200 MB
+• Video size limit is: 50 MB
+• Video formats: mp4, H264
 </code></pre>
 
 </p>
 </details>
-<h3 id="button-grid">Button Grid<a class="headerlink" href="#button-grid" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Button Grid is supported as a Title with number of buttons positioned vertically </li>
+<h4 id="emoji">Emoji<a class="headerlink" href="#emoji" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
+</ul>
+<h4 id="typing">Typing<a class="headerlink" href="#typing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Typing indicators are not supported for bots</li>
+</ul>
+<h4 id="quick-replies">Quick Replies<a class="headerlink" href="#quick-replies" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Quick Replies are supported as a disappearing after click/tap Rich Media Message object buttons</li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Maximum content length 7000 characters
-Maximum number of rows is 24
-Maximum number of columns is 6
+<pre><code>• Type: Keyboard
+• Maximum content length is 7000 characters
+• Maximum label (buttons text) length is 250 characters
+• Maximum number of rows is 24
+• Maximum number of columns is 6
+• Font size can be changed between 12 and 32
 </code></pre>
 
 </p>
 </details>
-<h3 id="carousel">Carousel<a class="headerlink" href="#carousel" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Carousel is supported as a monolith structure with <em>Picture</em>, <em>Header</em> (Title), <em>Details</em> (Subtitle), and not disappearing <em>Buttons</em> (Call to Action)</li>
+<figure> <img src="/novadocs/components/botflow/examples/ViberFlowQuickReplies.png" title="Viber Quick Replies" width="600" height"500"> </a> </figure>
+<h4 id="card">Card<a class="headerlink" href="#card" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Card is supported as a monolith structure with <em>Title</em>, <em>Subtitle</em>, <em>Subtitle</em>, and <em>Quick Replies</em> buttons</li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Maximum content length 7000 characters
-Maximum number of columns per carousel content block is 6
-Maximum number of rows per carousel content block is 7
-Maximum array of buttons is 6 * &quot;columns per carousel content block&quot; * &quot;rows per carousel content block&quot;
+<pre><code>• Type: Rich Media Message
+• Maximum length of Title with Subtitle is 239 characters
+• Maximum length of label (buttons text) is 250 characters
+• Maximum 3 buttons
+• Picture size limit is: 1 MB
+• Picture formats: jpeg
+
 </code></pre>
 
 </p>
 </details>
+<figure> <img src="/novadocs/components/botflow/examples/ViberFlowCard.png" title="Viber Card" width="600" height"500"> </a> </figure>
+<h4 id="button-list">Button List<a class="headerlink" href="#button-list" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Button List is supported as a Title with number of keyboard buttons positioned vertically </li>
+</ul>
+<details><summary>Known Restrictions</summary>
+<p>
+
+<pre><code>• Type: Keyboard
+• Maximum title length 7000 characters
+• Maximum number of rows is 24
+• Font size can be changed between 12 and 32
+</code></pre>
+
+</p>
+</details>
+<figure> <img src="/novadocs/components/botflow/examples/ViberFlowButtonlist.png" title="Viber Button List" width="600" height"500"> </a> </figure>
+<h4 id="button-grid">Button Grid<a class="headerlink" href="#button-grid" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Button Grid is supported as a Title with number of buttons positioned vertically </li>
+</ul>
+<details><summary>Known Restrictions</summary>
+<p>
+
+<pre><code>• Type: Keyboard
+• Maximum content length 7000 characters
+• Maximum number of rows is 24
+• Maximum number of columns is 6
+</code></pre>
+
+</p>
+</details>
+<figure> <img src="/novadocs/components/botflow/examples/ViberFlowButtongrid.png" title="Viber Button Grid" width="600" height"500"> </a> </figure>
+<h4 id="carousel">Carousel<a class="headerlink" href="#carousel" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Carousel is supported as a monolith structure with <em>Picture</em>, <em>Header</em> (Title), <em>Details</em> (Subtitle), and not disappearing <em>Buttons</em> (Call to Action)</li>
+</ul>
+<details><summary>Known Restrictions</summary>
+<p>
+
+<pre><code>• Type: Rich Media Message
+• Pictures in format JPEG or PNG, with up to 500 Kb size
+• Maximum of 3 buttons
+• Maximum content (title and subtitle) length 7000 characters
+• Maximum number of columns per carousel content block is 6
+• Maximum number of rows per carousel content block is 7
+• Maximum array of buttons is 6 * &quot;columns per carousel content block&quot; * &quot;rows per carousel content block&quot;
+</code></pre>
+
+</p>
+</details>
+<figure> <img src="/novadocs/components/botflow/examples/ViberFlowCarousel.png" title="Viber Carousel" width="600" height"500"> </a> </figure>
                 
               
               

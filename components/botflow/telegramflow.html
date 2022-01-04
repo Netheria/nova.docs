@@ -1976,76 +1976,123 @@
                 
                 <h1 id="novabotflow-telegram">Nova.BotFlow Telegram<a class="headerlink" href="#novabotflow-telegram" title="Permanent link">&para;</a></h1>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<h3 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending text from agent to client</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending text from client to agent</li>
-</ul>
-<h3 id="pictures">Pictures<a class="headerlink" href="#pictures" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending pictures from agent to client</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending pictures from client to agent</li>
-</ul>
-<h3 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending attachments from client to agent</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending attachments from agent to client</li>
-</ul>
-<h3 id="emoji">Emoji<a class="headerlink" href="#emoji" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sending emoji from client to agent</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> sentding emoji from agent to client</li>
-</ul>
-<h3 id="typing">Typing<a class="headerlink" href="#typing" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> typing identificator is precent when agent writes a message</li>
-</ul>
-<h3 id="quick-replies">Quick Replies<a class="headerlink" href="#quick-replies" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Quick Replies are supported as a disappearing after click/tap buttons</li>
+<h4 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Inline Keyboard:
-Maximum 8 buttons per row
-Maximum 100 button rows
+<pre><code>• Text character limit: 4096 UTF
 </code></pre>
 
 </p>
 </details>
-<h3 id="card">Card<a class="headerlink" href="#card" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Card is supported as a monolith structure with <em>Title</em>, <em>Subtitle</em>, <em>Subtitle</em>, and <em>Quick Replies</em> buttons</li>
-</ul>
-<h3 id="button-list">Button List<a class="headerlink" href="#button-list" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Button List is supported as a Title with number of buttons positioned vertically </li>
+<h4 id="pictures">Pictures<a class="headerlink" href="#pictures" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Maximum 100 button rows
+<pre><code>• Picture size limit is: 25 MB
+• Picture formats: jpeg, jpg, png, gif (only if type:&quot;ANIMATION&quot;)
+• Description text: character limit 200
 </code></pre>
 
 </p>
 </details>
-<h3 id="button-grid">Button Grid<a class="headerlink" href="#button-grid" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Button Grid is supported as a Title with number of buttons positioned horizontally </li>
+<h4 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
 </ul>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>Maximum 8 buttons per row
+<pre><code>• File (including video) size limit is: 2 GB
+• Video formats: any
 </code></pre>
 
 </p>
 </details>
-<h3 id="carousel">Carousel<a class="headerlink" href="#carousel" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Carousel is supported as a number of Card type messages, where only last one will have buttons </li>
+<h4 id="emoji">Emoji<a class="headerlink" href="#emoji" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Both directions: <em>agent</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>client</em>, <em>client</em> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg></span> <em>agent</em></li>
 </ul>
+<h4 id="typing">Typing<a class="headerlink" href="#typing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Typing identificator is precent when agent writes a message</li>
+<li>Identificator is active whole time the message is written</li>
+</ul>
+<h4 id="quick-replies">Quick Replies<a class="headerlink" href="#quick-replies" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Quick Replies are supported as a disappearing after click/tap buttons</li>
+</ul>
+<details><summary>Known Restrictions</summary>
+<p>
+
+<pre><code>• Type: Inline Keyboard
+• Content: maximum of 4096 characters
+• Maximum 8 buttons per row
+• Maximum 100 button rows
+</code></pre>
+
+</p>
+</details>
+<figure> <img src="/novadocs/components/botflow/examples/TelegramFlowQuickReplies.png" title="Telegram Quick Replies" width="600" height"500"> </a> </figure>
+<h4 id="card">Card<a class="headerlink" href="#card" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Card is supported as a monolith structure with <em>Title</em>, <em>Subtitle</em> and <em>Quick Replies</em> buttons</li>
+</ul>
+<details><summary>Known Restrictions</summary>
+<p>
+
+<pre><code>• Type: Inline Keyboard
+• Content: maximum of 4096 characters
+• Maximum 8 buttons per row
+• Maximum 100 button rows
+• Picture size limit is: 25 MB
+• Picture formats: jpeg, jpg, png
+</code></pre>
+
+</p>
+</details>
+<figure> <img src="/novadocs/components/botflow/examples/TelegramFlowCard.png" title="Telegram Card" width="600" height"500"> </a> </figure>
+<h4 id="button-list">Button List<a class="headerlink" href="#button-list" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Button List is supported as a Title with number of buttons positioned vertically </li>
+</ul>
+<details><summary>Known Restrictions</summary>
+<p>
+
+<pre><code>• Type: Inline Keyboard
+• Content: maximum of 4096 characters
+• Maximum 100 button rows
+</code></pre>
+
+</p>
+</details>
+<figure> <img src="/novadocs/components/botflow/examples/TelegramFlowButtonlist.png" title="Telegram Button List" width="600" height"500"> </a> </figure>
+<h4 id="button-grid">Button Grid<a class="headerlink" href="#button-grid" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Button Grid is supported as a Title with number of buttons positioned horizontally </li>
+</ul>
+<details><summary>Known Restrictions</summary>
+<p>
+
+<pre><code>• Type: Inline Keyboard
+• Content: maximum of 4096 characters
+• Maximum 8 buttons per row
+</code></pre>
+
+</p>
+</details>
+<figure> <img src="/novadocs/components/botflow/examples/TelegramFlowButtongrid.png" title="Telegram Button Grid" width="600" height"500"> </a> </figure>
+<h4 id="carousel">Carousel<a class="headerlink" href="#carousel" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Carousel is supported as a number of Card type messages, where every card may have buttons (different, if needed)</li>
+</ul>
+<figure> <img src="/novadocs/components/botflow/examples/TelegramFlowCarousel.png" title="Telegram Carousel" width="600" height"500"> </a> </figure>
                 
               
               

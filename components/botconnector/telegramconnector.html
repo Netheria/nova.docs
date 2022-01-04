@@ -2022,16 +2022,19 @@
 <h4 id="typing">Typing<a class="headerlink" href="#typing" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Typing identificator is precent when agent writes a message</li>
-<li>Identificator is active whole time the message is written</li>
+<li>The status is set for 5 seconds or less </li>
+<li>When a message arrives from bot, Telegram client clears its typing status</li>
 </ul>
 <h4 id="quick-replies">Quick Replies<a class="headerlink" href="#quick-replies" title="Permanent link">&para;</a></h4>
 <p>Quick Replies are supported as a disappearing after click/tap <strong>keyboard</strong> buttons</p>
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>• type: inline keyboard
-• сontent: 4096 chars.
-• max 3 buttons rows, so more than 3 bottons will be sent as keyboard layout
+<pre><code>• Type: Keyboard
+• Maximum label (buttons text) length 75 characters
+• Maximum content length 3000 characters
+• Maximum 5 buttons per row
+• Maximum 49 rows
 </code></pre>
 
 </p>
@@ -2044,8 +2047,12 @@
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>• Maximum 3 button rows
-• More than 3 button rows will be sent as a keyboard layout
+<pre><code>• Type: Keyboard
+• Title and Subtitle are written in separate from picture message
+• Maximum label (buttons text) length 75 characters
+• Maximum content length 3000 characters
+• Maximum 5 buttons per row
+• Maximum 49 rows
 </code></pre>
 
 </p>
@@ -2058,7 +2065,9 @@
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>• Maximum 100 button rows
+<pre><code>• Type: Inline Keyboard
+• Content: maximum of 4096 characters
+• Maximum 100 button rows
 </code></pre>
 
 </p>
@@ -2071,7 +2080,9 @@
 <details><summary>Known Restrictions</summary>
 <p>
 
-<pre><code>• Maximum 8 buttons per row
+<pre><code>• Type: Inline Keyboard
+• Content: maximum of 4096 characters
+• Maximum 8 buttons per row
 </code></pre>
 
 </p>
@@ -2079,7 +2090,7 @@
 <figure> <img src="/novadocs/components/botconnector/examples/TelegramConnectorButtongrid.png" title="Telegram Button Grid" width="600" height"500"> </a> </figure>
 <h4 id="carousel">Carousel<a class="headerlink" href="#carousel" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Carousel is supported as a number of Card type messages, where only last one will have buttons</li>
+<li>Carousel is supported as a number of Card type messages, where every card may have buttons (different, if needed)</li>
 </ul>
 <figure> <img src="/novadocs/components/botconnector/examples/TelegramConnectorCarousel.png" title="Telegram Carousel" width="600" height"500"> </a> </figure>
                 
