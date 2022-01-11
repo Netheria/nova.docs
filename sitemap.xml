@@ -266,6 +266,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://netheria.github.io/novadocs/components/botflow/nexmoflow.html</loc>
+         <lastmod>2022-01-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://netheria.github.io/novadocs/components/botflow/okflow.html</loc>
          <lastmod>2022-01-11</lastmod>
          <changefreq>daily</changefreq>
