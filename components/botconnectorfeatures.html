@@ -511,13 +511,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#microsoft" class="md-nav__link">
-    Microsoft
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1475,6 +1468,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novatalksnotices.html" class="md-nav__link">
+        Nova.Talks
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1842,6 +1849,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="novatalks.html" class="md-nav__link">
+        Nova.Talks
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1968,13 +1989,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#microsoft" class="md-nav__link">
-    Microsoft
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2002,87 +2016,86 @@
 
 <!-- END INCLUDE -->
 
+<!-- BEGIN INCLUDE .\glossary.md &lt;!--glossary-start--&gt; &lt;!--glossary-end--&gt; -->
+
+<!-- END INCLUDE -->
+
 <h1 id="novabotconnector">Nova.BotConnector<a class="headerlink" href="#novabotconnector" title="Permanent link">&para;</a></h1>
 <p><em>Nova.BotConnector is a JavaScript connector to connect messagers and unification of work with them</em></p>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <h3 id="component-specific">Component specific<a class="headerlink" href="#component-specific" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p>Created RPM package for installation <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2018r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></p>
-<ul>
-<li>dependencies on MongoDB and NodeJS packages</li>
-<li>systemd script to auto reload on crash</li>
-<li>root for modules: /opt/nova.botconnector</li>
-</ul>
-</li>
-<li>
-<p>Implemented logging <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2018r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></p>
-</li>
-<li>Integration with high-availability cluster <em>Mongodb</em> (on <em>mongoose</em> driver level) <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2019r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Added Proxy Server support <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2020r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Implemented mechanism to delete old conversations (bson cleanup) <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li><abbr title="The Logging Framework for JavaScript with no runtime dependencies.">log4js</abbr> logging <a href="/novadocs/components/novabotconnector.html#2018r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>High-availability cluster <em><abbr title="Source-available cross-platform document-oriented database program. Classified as a NoSQL database program and uses JSON-like documents with optional schemas.">Mongodb</abbr></em> support (on <em><abbr title="JavaScript object-oriented programming library that creates a connection between MongoDB and the Express web application framework.">mongoose</abbr></em> driver level) <a href="/novadocs/components/novabotconnector.html#2019r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li><abbr title="Server application that acts as an intermediary between a client requesting a resource and the server providing that resource.">Proxy Server</abbr> support <a href="/novadocs/components/novabotconnector.html#2020r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Conversations cleanup (<abbr title="Binary JSON. It is a binary form for representing simple or complex data structures including associative arrays (also known as name-value pairs), integer indexed arrays, and a suite of fundamental scalar types.">bson</abbr> cleanup) service with customizable launch timer <a href="/novadocs/components/novabotconnector.html#2021r1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <hr />
 <h3 id="all-channels">All channels<a class="headerlink" href="#all-channels" title="Permanent link">&para;</a></h3>
 <ul>
-<li>DELETE method for deletion of messages in database <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2018r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Service with DELETE method for deletion of messages in database <a href="/novadocs/components/novabotconnector.html#2018r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a> </li>
 <li>
-<p>Three types of outbound messages <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a>:</p>
+<p>Outbound messaging support <a href="/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></p>
+<blockquote>
+<p>Three outbound messaging work algorithms:</p>
 <ul>
-<li>without specific answer redirect on agent or workgroup\skillgroup </li>
-<li>with reservation of agent or workgroup\skillgroup after outbound message and specific answer redirect on agent or workgroup\skillgroup</li>
-<li>with reservation of agent or workgroup\skillgroup after client's reply and specific answer redirect on agent or workgroup\skillgroup</li>
-</ul>
+<li>
+<p>simple outbound message</p>
 </li>
 <li>
-<p>Deletion of user privacy related data from DB <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></p>
+<p>outbound message with agent or workgroup\skillgroup reservation for routing</p>
 </li>
-<li>Sending of REF context from uri to Omilia on the start of conversation <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Sending of <strong>Avatar</strong> parameter to template <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Config variable <em>CanReply</em> <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>
+<p>outbound message with instant routing on agent or workgroup\skillgroup</p>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>Deletion of user privacy related data from database <a href="/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></p>
+</li>
+<li>Sending of <abbr title="variable sent with the means of url parametrization, can have any value.">REF</abbr> value from uri to Omilia context at the start of conversation <a href="/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Sending of <strong>Avatar</strong> (local storage link on user's picture) <a href="/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Limitation on agent reply ability to comment\post <a href="/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <hr />
 <h3 id="channel-specific">Channel specific<a class="headerlink" href="#channel-specific" title="Permanent link">&para;</a></h3>
 <h4 id="telegram">Telegram<a class="headerlink" href="#telegram" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Sending of <strong>/start</strong> command following text as REF parameter <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2020r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Typing Indicator <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Sending of <strong>/start</strong> command following text as <abbr title="variable sent with the means of url parametrization, can have any value.">REF</abbr> parameter <a href="/novadocs/components/novabotconnector.html#2020r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li><abbr title="Bubles or any other idication that pops up when someone writes a message in massangers">Typing Indicator</abbr> when agent write a message <a href="/novadocs/components/novabotconnector.html#2021r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <h4 id="viber">Viber<a class="headerlink" href="#viber" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Sending of <em>userid</em> in template <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2020r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Typing Indicator <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Sending of <em>userid</em> in <abbr title="A number of parameters listed in component config sent to ChatProxy.">template</abbr> <a href="/novadocs/components/novabotconnector.html#2020r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li><abbr title="Bubles or any other idication that pops up when someone writes a message in massangers">Typing Indicator</abbr> when agent write a message <a href="/novadocs/components/novabotconnector.html#2021r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <h4 id="facebook">Facebook<a class="headerlink" href="#facebook" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Receiving of additional user information (<em>firstname</em>, <em>lastname</em>, <em>username</em>) <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Typing Indicator <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>Readable logging: cleaned leftover logging <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Receiving of additional user information (<em>firstname</em>, <em>lastname</em>, <em>username</em>) <a href="/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li><abbr title="Bubles or any other idication that pops up when someone writes a message in massangers">Typing Indicator</abbr> when agent write a message <a href="/novadocs/components/novabotconnector.html#2021r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Customizable timeout limit for big media files sending <a href="/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <h4 id="facebook-wall-posts">Facebook Wall Posts<a class="headerlink" href="#facebook-wall-posts" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Pooling service <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Pooling service <a href="/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <h4 id="twitter">Twitter<a class="headerlink" href="#twitter" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Readable logging: cleaned leftover logging <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Customizable timeout limit for big media files sending <a href="/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <h4 id="whatsapp-nexmo">WhatsApp (Nexmo)<a class="headerlink" href="#whatsapp-nexmo" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Migration from API v0.1 to API v1 <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-<li>JWT authentification in compliance with the API v1 <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Migration from API v0.1 to API v1 <a href="/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li><abbr title="JSON Web Token. Used for authorization and for securely transmitting information between parties as a JSON object.">JWT</abbr> authentification in compliance with the API v1 <a href="/novadocs/components/novabotconnector.html#2021r4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <h4 id="wechat">WeChat<a class="headerlink" href="#wechat" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Sending of <em>first name</em> and <em>parential</em> (<em>ancestral</em>) <em>name</em> to PureEngage <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2020r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Sending of <em>first name</em> and <em>parential</em> (<em>ancestral</em>) <em>name</em> to PureEngage <a href="/novadocs/components/novabotconnector.html#2020r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
 <h4 id="webchat">WebChat<a class="headerlink" href="#webchat" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Receiving of additional user infogrmation (<em>firstname</em>, <em>lastname</em>) <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
-</ul>
-<h4 id="microsoft">Microsoft<a class="headerlink" href="#microsoft" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Changed the JSON format for conformity with actual connector version <a href="https://netheria.github.io/novadocs/components/novabotconnector.html#2018r3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
+<li>Receiving of additional user infogrmation (<em>firstname</em>, <em>lastname</em>) <a href="/novadocs/components/novabotconnector.html#2021r2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m12-4a10 10 0 0 1-19.54 3h2.13a8 8 0 1 0 0-6H2.46A10 10 0 0 1 22 12z"/></svg></span></a></li>
 </ul>
                 
               
