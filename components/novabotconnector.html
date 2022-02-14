@@ -3096,8 +3096,10 @@
 <li>
 <p>Implemented mechanism to delete old conversations (bson cleanup) <a href="https://sd.novait.com.ua/browse/NOV-65"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-65</a></p>
 <blockquote>
-<p>• cleanOlder field in config</p>
-<p>• deletes records in database: connectors.conversations</p>
+<p>Parameters in config file:</p>
+<p>• cleanOlder: X, // X - number of days; messages older than this number of days will be cleaned up</p>
+<p>• cleanUpSessions: Y, // Y - true or false</p>
+<p>(Deletes records in database: connectors.conversations)</p>
 </blockquote>
 </li>
 </ul>
@@ -3265,7 +3267,7 @@ WantedBy=timers.target
 </ul>
 <h4 id="bug-fixes_16">Bug Fixes<a class="headerlink" href="#bug-fixes_16" title="Permanent link">&para;</a></h4>
 <ul>
-<li><em>Viber</em>: fixed sending message types like <a href="https://sd.novait.com.ua/browse/NOV-14"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-14</a>:<ul>
+<li><em>Viber</em>: fixed sending message types of <a href="https://sd.novait.com.ua/browse/NOV-14"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-14</a>:<ul>
 <li>text</li>
 <li>picture\photo</li>
 <li>video</li>
@@ -3291,7 +3293,12 @@ WantedBy=timers.target
 </li>
 <li>
 <p><em>All channels</em>: DELETE method for deletion of messages in database  <a href="https://sd.novait.com.ua/browse/NOV-6"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-6</a></p>
-<blockquote></blockquote>
+<blockquote>
+<p>Remove all conversations from the connector:</p>
+<p>curl -X DELETE "http://localhost:8080/connectors/${CONNECTOR_ID}/clean"</p>
+<p>Remove a single conversation from the connector:</p>
+<p>curl -X DELETE "http://localhost:8080/connectors/${CONNECTOR_ID}/conversations/${CONVERSATION_ID}"</p>
+</blockquote>
 </li>
 <li>
 <p>Implemented logging <a href="https://sd.novait.com.ua/browse/NOV-7"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-7</a></p>
