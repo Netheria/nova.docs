@@ -2250,7 +2250,7 @@
 <h2 id="2020r4">2020R4<a class="headerlink" href="#2020r4" title="Permanent link">&para;</a></h2>
 <h4 id="new-features_3">New Features<a class="headerlink" href="#new-features_3" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Added sending of channel variables to component <a href="https://sd.novait.com.ua/browse/NOV-123"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-123</a>:</li>
+<li>Added receiving of channel variables from components <a href="https://sd.novait.com.ua/browse/NOV-123"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-123</a>:</li>
 </ul>
 <details><summary>Channel variables</summary>
 <p>
@@ -2267,7 +2267,7 @@ conversationid
 </details>
 
 <ul>
-<li>Added functionality to not show system messages to agent <a href="https://sd.novait.com.ua/browse/NOV-125"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-125</a></li>
+<li>Added functionality to hide system messages from agent <a href="https://sd.novait.com.ua/browse/NOV-125"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-125</a></li>
 </ul>
 <h4 id="bug-fixes_3">Bug Fixes<a class="headerlink" href="#bug-fixes_3" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2281,7 +2281,64 @@ conversationid
 <h2 id="2020r1">2020R1<a class="headerlink" href="#2020r1" title="Permanent link">&para;</a></h2>
 <h4 id="new-features_4">New Features<a class="headerlink" href="#new-features_4" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Added Multiinstance support <a href="https://sd.novait.com.ua/browse/NOV-25"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-25</a></li>
+<li>
+<p>Added Multiinstance support <a href="https://sd.novait.com.ua/browse/NOV-25"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-25</a></p>
+<blockquote>
+<p>• Backwards compatibility with single instance configuration</p>
+<p>• "uri" parameter in "db" (database) section. </p>
+<p>(it is ignored if exist old parameters exist: host, port, dbName)</p>
+<p>• Logging of used parameters</p>
+</blockquote>
+</li>
+</ul>
+<details><summary>Old config example</summary>
+<p>
+
+<pre><code>    db: {
+        host: '127.0.0.1',
+        port: '27017',
+        dbName: 'nova-botconnector',
+        debugMode: false,
+        options: {
+            useNewUrlParser: true,
+            reconnectTries: Number.MAX_VALUE,
+            reconnectInterval: 1000,
+            poolSize: 10,
+            connectTimeoutMS: 5000,
+            family: 4,
+            keepAlive: true,
+            keepAliveInitialDelay: 300000,
+        },
+    }
+</code></pre>
+
+</p>
+</details>
+
+<details><summary>New config example</summary>
+<p>
+
+<pre><code>    db: {
+
+
+        uri: &quot;mongodb://localhost:27022/chat,localhost:27021,localhost:27020&quot;,
+        options: {
+            useNewUrlParser: true,
+            reconnectTries: Number.MAX_VALUE,
+            reconnectInterval: 1000,
+            poolSize: 10,
+            connectTimeoutMS: 5000,
+            family: 4,
+            keepAlive: true,
+            keepAliveInitialDelay: 300000,
+        },
+    }
+</code></pre>
+
+</p>
+</details>
+
+<ul>
 <li>Integration with high-availability cluster <em>Mongodb</em> (on <em>mongoose</em> driver level) <a href="https://sd.novait.com.ua/browse/NOV-25"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-25</a></li>
 <li>Routing on different EntryPoints for <em>BotConnector</em> <a href="https://sd.novait.com.ua/browse/NOV-45"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-45</a></li>
 <li>Implemented sending of chatbot conversation history <a href="https://sd.novait.com.ua/browse/NOV-46"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-46</a></li>
