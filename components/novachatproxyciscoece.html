@@ -2170,7 +2170,12 @@
 <h2 id="2021r3">2021R3<a class="headerlink" href="#2021r3" title="Permanent link">&para;</a></h2>
 <h4 id="new-features">New Features<a class="headerlink" href="#new-features" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Implemented case insensitive work with userdata patterns <a href="https://sd.novait.com.ua/browse/NOV-256"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-256</a></li>
+<li>
+<p>Implemented case insensitive work with userdata patterns <a href="https://sd.novait.com.ua/browse/NOV-256"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-256</a></p>
+<blockquote>
+<p>• Case insensitive work with parameters in template written in configuration file</p>
+</blockquote>
+</li>
 </ul>
 <details><summary>Template</summary>
 <p>
@@ -2195,6 +2200,13 @@
 <p>Added support of external configuration file <a href="https://sd.novait.com.ua/browse/NOV-259"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NOV-259</a></p>
 <blockquote>
 <p>• Configuration file now can be outside component directory</p>
+<p>Path to file can be set in three ways:</p>
+<p>• Envirounment variable CHATPROXY_INSTANCE.</p>
+<p>(Read configuration from "config" directory) </p>
+<p>• Envirounment variables CONFIG_DIR and CONFIG_FILE</p>
+<p>(Read configuration from "$CONFIG_DIR/$CONFIG_FILE")</p>
+<p>• Service node index.js /path/to/configurationfile/config.js launch parameter</p>
+<p>(Read configuration from "/path/to/configurationfile/config.js")</p>
 </blockquote>
 </li>
 </ul>
