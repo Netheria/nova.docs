@@ -2331,7 +2331,7 @@
 </details>
 
 <ul>
-<li><em>Nova.Chats.UI</em>: UI part for LDAP authentification [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-42] [NC2-42]
+<li><em>Nova.Chats.UI</em>: UI part for LDAP authentification <a href="https://sd.novait.com.ua/browse/NC2-42"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-42</a>
     Related task <a href="https://sd.novait.com.ua/browse/NC2-38"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-38</a></li>
 </ul>
 <blockquote>
@@ -2340,16 +2340,77 @@
 </blockquote>
 <ul>
 <li>
-<p><em>Nova.Chats.Core</em>: creation of users with different auth providers [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-43] [NC2-43]
+<p><em>Nova.Chats.Core</em>: creation of users with different auth providers <a href="https://sd.novait.com.ua/browse/NC2-43"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-43</a>
     Related task <a href="https://sd.novait.com.ua/browse/NC2-38"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-38</a></p>
 <blockquote>
-<p>Fields sent are the same as per registration in UI:</p>
-<p>Agent UserName</p>
-<p>Email Address</p>
-<p>Agent Display Name</p>
-<p>Role</p>
-<p>Provider</p>
-<p>Password</p>
+<p>Created endpoint " /auth/active " to receive list of active auth providers</p>
+<p>Active providers are listed in "cfg.default.json", located in the root of the repository</p>
+<p>field format: </p>
+<p>• "activeProviders": ["email", "genesys", "ldap", "ldaps"]</p>
+<p>If provider is deleted from the config, the users tied with provider wont be able to log in</p>
+</blockquote>
+</li>
+<li>
+<p><em>Nova.Chats.UI</em>: LDAP authentification <a href="https://sd.novait.com.ua/browse/NC2-42"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-42</a></p>
+<blockquote>
+<p>Changed Login payload to:</p>
+<p>• password: "Rokdestbob322!!"</p>
+<p>• sso_auth_token: ""</p>
+<p>• username: "voll@gmail.com"</p>
+</blockquote>
+</li>
+</ul>
+<details><summary>Authorization flow</summary>
+<p>
+
+<pre><code>• 
+•
+•
+•
+    1) При логине отправл пейлоад с пассвордом и юзернеймом (обязательные поля)
+    2) После получения этого пейлода в бэк идет проверка в БД есть ли такой пользователь по !!!uid = username!!!
+    3) Если нет - неуспешна, если есть - по полю &quot;провайдер&quot; определяется метод авторизации 
+    4) Авторизация в соотв с методом 
+</code></pre>
+
+</p>
+</details>
+
+<ul>
+<li>
+<p><em>Nova.Chats.Core</em>: User creation with different provider authentification <a href="https://sd.novait.com.ua/browse/NC2-43"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-43</a></p>
+<blockquote>
+<p>Expanded API to support creation of new users with authentification provider</p>
+</blockquote>
+</li>
+</ul>
+<details><summary>User creation payload example</summary>
+<p>
+
+<pre><code>* - new field
+
+{
+*displayName: &quot;nickname&quot;
+ email: &quot;name@gmail.com&quot;
+ name: &quot;name&quot;
+*password: &quot;qwerty&quot;
+*provider: &quot;email&quot;
+ role: &quot;agent\administrator&quot;
+*username: &quot;name@gmail.com&quot;
+}
+</code></pre>
+
+</p>
+</details>
+
+<ul>
+<li>
+<p><em>Nova.Chats.UI</em>: User creation with different provider authentification <a href="https://sd.novait.com.ua/browse/NC2-44"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-44</a></p>
+<blockquote>
+<p>Combox in Create Agent menu, with options: Email, Genesys, LDAP, LDAPs</p>
+<p>• "Email" auth gets "User Name" from Email field</p>
+<p>• "Email" auth has "Password" field</p>
+<p>• "Genesys", "LDAP", "LDAPs" auth do not have "Password" field, they synchronize password from their name-self-explanatory sources</p>
 </blockquote>
 </li>
 </ul>
