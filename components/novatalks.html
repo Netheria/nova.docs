@@ -2285,29 +2285,8 @@
 <h3 id="2021r4">2021R4<a class="headerlink" href="#2021r4" title="Permanent link">&para;</a></h3>
 <h3 id="2021r4-5">2021R4-5<a class="headerlink" href="#2021r4-5" title="Permanent link">&para;</a></h3>
 <h4 id="new-features_1">New Features<a class="headerlink" href="#new-features_1" title="Permanent link">&para;</a></h4>
-<p>-</p>
-<h4 id="bug-fixes_1">Bug Fixes<a class="headerlink" href="#bug-fixes_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>none</li>
-</ul>
-<hr />
-<h3 id="2021r4_1">2021R4<a class="headerlink" href="#2021r4_1" title="Permanent link">&para;</a></h3>
-<h3 id="2021r4-4">2021R4-4<a class="headerlink" href="#2021r4-4" title="Permanent link">&para;</a></h3>
-<h4 id="new-features_2">New Features<a class="headerlink" href="#new-features_2" title="Permanent link">&para;</a></h4>
-<ul>
-<li>
-<p><em>Nova.Chats.Standalone</em>: UI <a href="https://sd.novait.com.ua/browse/NC2-36"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-36</a></p>
-<blockquote>
-<p>• UI migration to ChatWoot v1.20.0</p>
-<p>• ChatWoot logo changed to NovaIT logo</p>
-<p>• Deleted mentions of versioning</p>
-<p>• Authentification transfered on authentification module</p>
-<p>• Hidden "delete" option in the chat messages options</p>
-</blockquote>
-</li>
-<li>
-<p><em>Nova.Chats.Core</em>: LDAP authentification <a href="https://sd.novait.com.ua/browse/NC2-38"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-38</a></p>
-</li>
+<li><em>Nova.Chats.Core</em>: LDAP authentification <a href="https://sd.novait.com.ua/browse/NC2-38"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-38</a></li>
 </ul>
 <details><summary>General information</summary>
 <p>
@@ -2490,6 +2469,73 @@
 <p>• "Genesys", "LDAP", "LDAPs" auth do not have "Password" field, they synchronize password from their name-self-explanatory sources</p>
 </blockquote>
 </li>
+<li>
+<p><em>Nova.Chats.UI</em>: CRUD methods for Agents[<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-46] [NC2-46]</p>
+<blockquote>
+<p>•</p>
+</blockquote>
+</li>
+<li>
+<p><em>Nova.Chats.UI</em>: Conversation icon visualization as a messanger icon [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-47] [NC2-47]</p>
+<blockquote>
+<p>Each conversation icon (big and small icons on the left and top sides from the client's nickname respectively) will show the conversation channel according to messanger attribute in <em>conversation</em></p>
+</blockquote>
+</li>
+<li>
+<p><em>Nova.Chats.UI</em>: [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-57] [NC2-57]</p>
+<blockquote>
+<p>•</p>
+</blockquote>
+</li>
+<li>
+<p><em>NovaTalks.BotAgent</em>: DEMO chatbot [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-51] [NC2-51]</p>
+<p>• Texting chatbot with buttons: greeting, transfer chats on Teams and Agents by ID</p>
+<p>• Supports channels: <em>Viber</em>, <em>Telegram</em>, <em>Webchat</em></p>
+</li>
+<li>
+<p><em>NovaTalks.PureConnect.Connector</em>: Agent's synchronization Genesys to ChatWoot by UID [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-52] [NC2-52]</p>
+<blockquote>
+<p>• Synchronization fills up <em>UID</em> with user's ID</p>
+<p>• <em>email</em> synchronize in corresponding field in <em>email</em> table</p>
+<p>• If <em>email</em> is choosen for loging in, it will be used for <em>UID</em> field</p>
+</blockquote>
+</li>
+<li>
+<p><em>NovaTalks.UI</em>: login using UID [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-53] [NC2-53]</p>
+<blockquote>
+<p>• loging in uses <em>UID</em> field instead of <em>email</em></p>
+<p>• Genesys auth when auth token exists will send it to a Core istead of login and password</p>
+</blockquote>
+</li>
+<li>
+<p><em>NovaTalks.PureConnect.Connector</em>: setting chat Id from ChatWoot in Genesys context [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-54] [NC2-54]</p>
+<blockquote>
+<p>• Additional attribute for conversation: WebTools_nova_conversationId</p>
+</blockquote>
+</li>
+<li>
+<p><em>NovaTalks.InteractionConnect</em>: Sending of Genesys token on login in NovaTalks [<img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-55] [NC2-55]</p>
+</li>
+</ul>
+<h4 id="bug-fixes_1">Bug Fixes<a class="headerlink" href="#bug-fixes_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>none</li>
+</ul>
+<hr />
+<h3 id="2021r4_1">2021R4<a class="headerlink" href="#2021r4_1" title="Permanent link">&para;</a></h3>
+<h3 id="2021r4-4">2021R4-4<a class="headerlink" href="#2021r4-4" title="Permanent link">&para;</a></h3>
+<h4 id="new-features_2">New Features<a class="headerlink" href="#new-features_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><em>Nova.Chats.Standalone</em>: UI <a href="https://sd.novait.com.ua/browse/NC2-36"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-36</a></p>
+<blockquote>
+<p>• UI migration to ChatWoot v1.20.0</p>
+<p>• ChatWoot logo changed to NovaIT logo</p>
+<p>• Deleted mentions of versioning</p>
+<p>• Authentification transfered on authentification module</p>
+<p>• Hidden "delete" option in the chat messages options</p>
+</blockquote>
+</li>
 </ul>
 <h4 id="bug-fixes_2">Bug Fixes<a class="headerlink" href="#bug-fixes_2" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2542,6 +2588,7 @@ Account settings fields:
 <ul>
 <li>
 <p><em>Nova.Chats.Core</em>: CRUD methods for Agents <a href="https://sd.novait.com.ua/browse/NC2-34"><img alt="📋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4cb.svg" title=":clipboard:" /> NC2-34</a></p>
+<p>• All methods require <em>api_access_token</em>, that can be took from super administrator</p>
 <blockquote>
 <p>• Login: check if "cofirmed_at" != NULL</p>
 <p>api/v1/accounts/accountId/agents/agentId/login</p>
