@@ -29,7 +29,7 @@
 <p>
 ```
 • File size limit is: 200 MB
-• Video size limit is: 50 MB
+• Video size limit is: 26 MB
 • Video formats: mp4, H264
 ```
 </p>

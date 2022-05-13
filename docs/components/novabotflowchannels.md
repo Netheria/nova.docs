@@ -1,5 +1,9 @@
+---
+hide:
+  - toc
+---
+
 #Nova.BotFlow
-##Features
 ###Channel Capabilities
 ####Legend
 
@@ -23,10 +27,10 @@
 |<figure> <a href="botflow/kikflow.html"> <img src="/novadocs/components/assets/kik.svg" title="Kik" width="100" height"100"> </a> </figure>                                 |-                |-                |-                |-                |-                |-                |-                |-                |-                |-                |
 |<figure> <a href="botflow/smoochflow.html"> <img src="/novadocs/components/assets/smooch.jfif" title="Smooch" width="100" height"100"> </a> </figure>                       |:material-check: |:material-check: |:material-check: |:material-check: |-                |:material-check: |:material-close: |:material-close: |:material-close: |:material-close: |
 |<figure> <a href="botflow/nexmoflow.html"> <img src="/novadocs/components/assets/nexmo.jpg" title="Nexmo" width="100" height"100"> </a> </figure>                           |:material-check: |:material-check: |:material-check: |:material-check: |-                |:material-check: |:material-close: |:material-close: |:material-close: |:material-close: |
-|<figure> <a href="botflow/vkflow.html"> <img src="/novadocs/components/assets/vk.svg" title="Vkontakte" width="100" height"100"> </a> </figure>                             |:material-check: |:material-check: |:material-check: |:material-check: |-                |:material-check: |:material-check: |:material-check: |:material-check: |:material-check: |
-|<figure> <a href="botflow/okflow.html"> <img src="/novadocs/components/assets/ok.svg" title="Odnoklassniki" width="100" height"100"> </a> </figure>                         |:material-check: |:material-check: |:material-check: |:material-check: |-                |:material-check: |:material-check: |:material-check: |:material-check: |:material-check: |
 |<figure> <a href="botflow/infobipflow.html"> <img src="/novadocs/components/assets/infobip.png" title="Infobip" width="100" height"100"> </a> </figure>                     |:material-check: |:material-check: |:material-check: |:material-check: |-                |-                |:material-close: |:material-close: |:material-close: |:material-close: |
 |<figure> <a href="botflow/fbwpflow.html"> <img src="/novadocs/components/assets/fbwallpost.png" title="Facebook Wallposts" width="100" height"100"> </a> </figure>          |:material-check: |:material-check: |:material-check: |:material-check: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |
 |<figure> <a href="botflow/twitterwpflow.html"> <img src="/novadocs/components/assets/twitterwallpost.png" title="Twitter Wallposts" width="100" height"100"> </a> </figure> |:material-check: |:material-check: |:material-check: |:material-check: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |
+|<figure> <a href="botflow/vkflow.html"> <img src="/novadocs/components/assets/vk.svg" title="Vkontakte" width="100" height"100"> </a> </figure>                             |:material-check: |:material-check: |:material-check: |:material-check: |-                |:material-check: |:material-check: |:material-check: |:material-check: |:material-check: |
+|<figure> <a href="botflow/okflow.html"> <img src="/novadocs/components/assets/ok.svg" title="Odnoklassniki" width="100" height"100"> </a> </figure>                         |:material-check: |:material-check: |:material-check: |:material-check: |-                |:material-check: |:material-check: |:material-check: |:material-check: |:material-check: |
 |<figure> <a href="botflow/vkwpflow.html"> <img src="/novadocs/components/assets/vkwallpost.jpg" title="Vkontakte Wallposts" width="100" height"100"> </a> </figure>         |:material-check: |:material-check: |:material-check: |:material-check: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |
 |<figure> <a href="botflow/okwpflow.html"> <img src="/novadocs/components/assets/okwallpost.png" title="Odnoklassniki Wallposts" width="100" height"100"> </a> </figure>     |:material-check: |:material-check: |:material-check: |:material-check: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |:material-close: |
