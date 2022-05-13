@@ -2,6 +2,8 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+  	<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+	<script>mermaid.initialize({startOnLoad:true});</script>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -2132,17 +2134,6 @@
 <h3 id="flowcharts">Flowcharts<a class="headerlink" href="#flowcharts" title="Permanent link">&para;</a></h3>
 <h3 id="conversation-flow">Conversation flow<a class="headerlink" href="#conversation-flow" title="Permanent link">&para;</a></h3>
 <h3 id="incoming-message">Incoming message<a class="headerlink" href="#incoming-message" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>graph TB
-  A{Customer IM} --&gt; |IM proprietary Protocol| B[Messenger]
-  B --&gt;|IM Webhook Communication Protocol| C[Webhook URL for incoming messages]
-  C --&gt; |:443| D[Reverse-Proxy - e.g. enginx]
-  D --&gt; E[BotConnector - unification]
-  subgraph Nova.ChatsConnector
-  E --&gt;|:8080| F[ChatProxy - de-unification]
-  E &amp; F --&gt;|:27017| J[(MongoDB - Database)]
-  end
-  F ---&gt;|:500X| G[Internal System: Genesys - PureConnect, PureEngage, PureCloud, Cisco - UCCE, UCCX, NovaIT - Nova.Chats]
-  G --&gt;  H[Operator]</code></pre>
 <h3 id="outgoing-message">Outgoing message<a class="headerlink" href="#outgoing-message" title="Permanent link">&para;</a></h3>
                 
               
