@@ -9,9 +9,133 @@
 ##Product Notices
 ***
 ##2022R2
+###2022R2-5 :briefcase: Epic
+####New Features
+- *NovaTalks.Core*: 010 Application API Migration - Custom Filter [:clipboard: NC2-91] [NC2-91]
+
+	> Custom Filter: 5 methods were done
+
+- *NovaTalks.Core*: 009 Application API Migration - Teams [:clipboard: NC2-90] [NC2-90]
+
+	> Teams: 5 methods were done
+
+- *NovaTalks.Core*: Implement swagger-stats (Swagger API Telemetry and APM Monitoring) functionality [:clipboard: NC2-174] [NC2-174]
+
+	> Can be switched on\off via envirounment variable **SWAGGER_STATS_ENABLE** in the configuration file (by default: false)
+
+- *NovaTalks.Core*: 016.001 Widget Frontend Analisys for Refactoring [:clipboard: NC2-97] [NC2-97]
+
+- *NovaTalks.Core.BA*: DB additional events gathering for historical reports [:clipboard: NC2-176] [NC2-176]
+
+[BD's additional events logging](./documents/novatalks/NC2-176_1_БД_Логування_додаткових_подій_v0.3(NovaTalks).docx.pdf)
+
+[New table with agents' events](./documents/novatalks/NC2-176_2_БД_NewTable_Події_операторів_v0.1(NovaTalks).docx.pdf)
+
+- *NovaTalks.Core*: 018 Internals - Online Status tracker [:clipboard: NC2-171] [NC2-171]
+
+- *NovaTalks.Core*: WebSocket extension to support ChatWidget [:clipboard: NC2-180] [NC2-180]
+
+- *NovaTalks.Core*: 008 Application API Migration - Profile [:clipboard: NC2-89] [NC2-89]
+
+	> Profile: 1 method was done
+
+- *NovaTalks.Core*: Dynamic configuration for migration scripts (envirounment variables) [:clipboard: NC2-194] [NC2-194]
+
+- *NovaTalks.Core*: 014 Application API Migration - Reports [:clipboard: NC2-95] [NC2-95]
+
+	> Reports: 5 methods were made
+
+####Bug Fixes
+- none
+***
+
+###2022R2-4 :briefcase: Epic
+####New Features
+- *NovaTalks.Core*: 015 Client API Migration - Websocket Server NodeJS [:clipboard: NC2-96] [NC2-96]
+
+	> Library: [ws](https://www.npmjs.com/package/ws)
+	
+	- Messages that server sends to workplace:
+	
+		• message.created
+	
+		• message.updated
+	
+		• conversation.created
+	
+		• conversation.status_changed
+	
+		• user:logout
+	
+		• page:reload
+	
+		• assignee.changed
+	
+		• conversation.typing_on
+	
+		• conversation.typing_off
+	
+		• conversation.contact_changed
+	
+		• presence.update
+	
+		• contact.deleted
+	
+		• contact.updated
+	
+		• conversation.mentioned
+	
+		• notification.created
+
+- *NovaTalks.Core*: 004 Application API Migration - Conversation [:clipboard: NC2-85] [NC2-85]
+
+- *NovaTalks.Core*: 005 Application API Migration - Conversation Assignment [:clipboard: NC2-86] [NC2-86]
+
+- *NovaTalks.Core*: 007 Application API Migration - Messages [:clipboard: NC2-88] [NC2-88]
+
+- *NovaTalks.Core*: 011 Application API Migration - Conversation Labels [:clipboard: NC2-92] [NC2-92]
+
+- *NovaTalks.Core*: 001.002 Application API Migration - Application Jobs to Bulls MQ porting - Part 2 [:clipboard: NC2-123] [NC2-123]
+
+####Bug Fixes
+- none
+***
+
+###2022R2-3 :briefcase: Epic
+####New Features
+- *NovaTalks.Core*: 001.002 Application API Migration - Application Jobs to Bulls MQ porting - Part 1 [:clipboard: NC2-122] [NC2-122]
+
+	- Jobs list:
+	
+		• action_cable_broadcast_job.rb
+		
+		> (event broadcasting on workplace)
+
+		• contact_avatar_job.rb
+
+		• contact_ip_lookup_job.rb
+
+		• trigger_scheduled_items_job.rb
+
+		• conversations_resolution_scheduler_job.rb
+
+		• activity_message_job.rb
+
+		• reopen_snoozed_conversations_job.rb
+
+		• resolution_job.rb
+
+		• user_mention_job.rb
+
+		• labal_update_job.rb
+	
+####Bug Fixes
+- none
+***
+
 ###2022R2-2 :briefcase: Epic
 ####New Features
-- *NovaTalks.Core*: Mwchanism of events evoking on models [:clipboard: NC2-126] [NC2-126]
+- *NovaTalks.Core*: Mechanism of events evoking on models [:clipboard: NC2-126] [NC2-126]
 
 	> Sequalize v6 hooks [documentation](https://sequelize.org/docs/v6/other-topics/hooks/)
 

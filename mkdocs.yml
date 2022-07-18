@@ -1,7 +1,7 @@
 # Project information
 site_name: NovaIT Products Documentation
-site_url: https://netheria.github.io/novadocs/
-site_description: NovaIt documentation about products
+site_url: https://novaitdevteam.github.io/nova.docs/
+site_description: NovaIT documentation about products
 site_author: NovaIT
 
 #Repository
@@ -182,6 +182,13 @@ plugins:
 #example:   'path/old.md': 'path/new.md'
         'index.md': 'markup.md'
         'components/index.md': 'components/markup.md'
+        'components/botflow/index.md': 'components/botflow/telegramflow.md'
+        'components/botconnector/index.md': 'components/botconnector/telegramconnector.md'
+        'components/documents/index.md': 'components/documents/toc.md'
+        'components/documents/novatalks/index.md': 'components/documents/novatalks/novatalkstoc.md'
+        'components/documents/chatsconnector/index.md': 'components/documents/chatsconnector/chatsconnectortoc.md'
+        'components/documents/botflow/index.md': 'components/documents/botflow/botflowtoc.md'
+        'components/documents/botconnector/index.md': 'components/documents/botconnector/botconnectortortoc.md'
 
 #Homepage
 extra:

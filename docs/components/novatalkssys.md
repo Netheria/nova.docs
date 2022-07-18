@@ -9,6 +9,47 @@
 ##Product Notices
 ***
 ##2022R2
+###2022R2-5 :briefcase: Epic
+- *NovaTalks.Sys*: NovaTalks build with restrictions [:clipboard: NC2-162] [NC2-162]
+
+	> Settings file with resource limitations configuration for components
+	
+	Three levels of instalation:
+	
+	- small
+	
+	- medium
+		
+	- large
+
+- *NovaTalks.Sys*: NovaTalks instalation with Longhorn block storage and without binding to nodes [:clipboard: NC2-143] [NC2-143]
+
+####Bug Fixes
+- none
+***
+
+###2022R2-4 :briefcase: Epic
+- *NovaTalks.Sys*: Evaluation of NovaTalks components memory consumption [:clipboard: NC2-107] [NC2-107]
+
+	- Basic borderline limits for memory by component:
+	|:---:|:---:                   |:---:    |	
+	|	1.| Nova Botflow           | 512 MiB |
+	|	2.| Novatalks Engine       | 512 MiB |
+	|	3.| Novatalks UI           | 512 MiB |
+	|	4.| Chatwoot Core (Web)    | 512 MiB |
+	|	5.| Chatwoot Core (Worker) | 384 MiB |
+
+####Bug Fixes
+- none
+***
+
+###2022R2-3 :briefcase: Epic
+- *NovaTalks.Sys*: Kubernetes Longhorn [:clipboard: NC2-142] [NC2-142]
+
+####Bug Fixes
+- none
+***
+
 ###2022R2-2 :briefcase: Epic
 - *NovaTalks.Sys*: Configuring dbmanager to access DB in k3s crossnamespaced [:clipboard: NC2-129] [NC2-129]
 

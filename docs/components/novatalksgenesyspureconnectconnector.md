@@ -8,7 +8,7 @@
 #NovaTalks.Genesys.PureConnect.Connector
 ##Product Notices
 ***
-###2021R3
+##2021R3
 ####New Features
 - *Genesys.PureConnect.Connector*: Core development for outbound messages [:clipboard: NC2-21] [NC2-21]
 
